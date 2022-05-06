@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Iframes</title>
+    <title>HTML Iframes and buttons</title>
     <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+
     <h1>HTML Iframes</h1>
+
     <center>
-        <iframe src="https://www.youtube.com/embed/RyhaT0T_Dn8" width="555" height="200" frameborder="1"></iframe>
+        <iframe src="https://www.youtube.com/embed/RyhaT0T_Dn8" width="555" height="200" frameborder="1" allowfullscreen="allow"></iframe>
     </center>
 
     <div style="color: red;">
@@ -36,8 +39,21 @@
 <p>This is a <span style="color: red; font-family: sans-serif;">red Canik</span> pistol.
 This is a <span style="color: rgb(21, 171, 10); font-family: sans-serif;">green Norinko</span> pistol</p>
 <p>Click the button and see the magic!</p>
+
 <form>
-    <input type="button" onclick="greet()" value="magic">
+    <center><input type="button" onclick="greet()" value="magic" class="btn"></center>
+    <!-- <center><input type="button" onclick="info('Taha Hassan', '20')" value="click here"></center> -->
 </form>
+
+<div ondblclick="mOver()">
+    <h1>JavaScript mouseover function</h1>
+</div>
+
+<div>
+    <form>
+        <center><input type="button" onclick="Wind()" value="Surprise!" class="wind"></center>
+    </form> 
+</div>
+
 </body>
 </html>
